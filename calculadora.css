@@ -1,0 +1,83 @@
+body{
+  background-image:url("fondo.jpg");
+}
+
+#calc{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:200px;
+	width:350px;
+	height:400px;
+	border:5px solid black;
+	background:#4D4949;
+ 	border-radius: 20px;
+ 	box-shadow: -4px -4px 4px rgba(0,0,0, 0.9);
+}
+
+#display{
+	font-size:1.5em; 
+	font-family:Verdana;
+	border:3px solid black;
+	width:300px;
+	height:45px;
+	margin:40px 20px 40px 20px;
+ 	border-radius: 10px;
+ 	box-shadow: -3px -3px 3px rgba(105,105,105, 0.9);
+}
+
+#display:focus{
+	background:#2ECCFA;
+}
+
+#numbers{
+	width:180px;
+	float:left;
+	padding-left:20px;
+}
+
+#operands{
+	width:120px;
+	float:right;
+	padding-left:10px;
+}
+
+#numbers div div, #operands div{
+	cursor:pointer;
+	height:50px;
+	text-align:center;
+	font-size:2.5em;
+	font-weight:bold;
+	border:3px solid black;
+	border-radius: 10px;
+	float: left;
+	transition-duration:0.3s;
+	box-shadow: -3px -3px 3px rgba(105,105,105, 0.9);
+}
+
+#numbers div div{
+	width: 30%;
+	background:#2ECCFA;
+	margin-left: 0px;
+}
+
+#numbers div div:hover, #operands div:hover{
+	background:#81DAF5;
+}
+
+
+#operands div {
+	width:50px;
+	background:#ff6e4f;
+	margin-left: 2px;
+	margin-bottom:2px;
+}
+
+#numbers div #ans {
+	font-size:2.0em;
+}
+
+#numbers div div:active, #operands div:active {
+	background:#fdff00;
+	transform:rotate(10deg);
+}
+
